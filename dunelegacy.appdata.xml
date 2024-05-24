@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>net.sourceforge.DuneLegacy.desktop</id>
+  <launchable type="desktop-id">net.sourceforge.DuneLegacy.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>Dune Legacy</name>
@@ -24,24 +25,32 @@
       NOTE: Original Dune 2 game files are needed.
     </p>
   </description>
+  <developer id="net.sourceforge.dunelegacy">
+    <name>Dune Legacy contributors</name>
+  </developer>
   <screenshots>
     <screenshot type="default">
-      <image>http://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission7.png</image>
+      <image>https://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission7.png</image>
+      <caption>Mission 7 played as Atreides.</caption>
     </screenshot>
     <screenshot>
-      <image>http://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9-2.png</image>
+      <image>https://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9-2.png</image>
+      <caption>Mission 9 Atreides base.</caption>
     </screenshot>
     <screenshot>
-      <image>http://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9-3.png</image>
+      <image>https://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9-3.png</image>
+      <caption>Mission 9 Harkonnen base.</caption>
     </screenshot>
     <screenshot>
-      <image>http://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9.png</image>
+      <image>https://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-mission9.png</image>
+      <caption>Mission 9 Ordos base.</caption>
     </screenshot>
     <screenshot>
-      <image>http://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-score.png</image>
+      <image>https://dunelegacy.sourceforge.net/website/screenshots/Dunelegacy-0.96-score.png</image>
+      <caption>Score screen.</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">http://dunelegacy.sourceforge.net/</url>
+  <url type="homepage">https://dunelegacy.sourceforge.net/</url>
   <releases>
     <release version="0.96.4" date="2016-12-29"/>
     <release version="0.96.3" date="2013-02-28"/>
