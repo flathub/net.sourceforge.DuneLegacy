@@ -1,6 +1,6 @@
 app-id: net.sourceforge.DuneLegacy
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: dunelegacy
 rename-icon: dunelegacy
@@ -31,6 +31,8 @@ modules:
           tag-pattern": ^v([\\d.]+)$
       - type: patch
         path: fix-build-with-SDL_mixer-2.0.2.patch
+      - type: patch
+        path: dunelegacy-0.96.4-c++-includes.patch
       - type: shell
         commands:
           - autoreconf --install
