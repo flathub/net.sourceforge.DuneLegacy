@@ -1,6 +1,6 @@
 app-id: net.sourceforge.DuneLegacy
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: dunelegacy
 rename-icon: dunelegacy
@@ -15,8 +15,24 @@ finish-args:
   - --device=dri
 
 modules:
+  - name: sdl2-ttf
+    buildsystem: autotools
+    rm-configure: true
+    sources:
+      - type: git
+        url: https://github.com/libsdl-org/SDL_ttf.git
+        tag: release-2.24.0-0-g2a891473eaf05ba1707a4b7913e6c4db7de7458a
+    cleanup:
+      - /include
+      - /lib/*.a
+      - /lib/*.la
+      - /lib/*.so
+      - /lib/cmake
+      - /lib/pkgconfig
   - name: dunelegacy
     buildsystem: autotools
+    config-opts:
+      - CPPFLAGS=-I${FLATPAK_DEST}/include/SDL2
     post-install:
       - install -Dm 0644 dunelegacy.desktop ${FLATPAK_DEST}/share/applications/dunelegacy.desktop
       - install -Dm 0644 dunelegacy.appdata.xml ${FLATPAK_DEST}/share/appdata/dunelegacy.appdata.xml
